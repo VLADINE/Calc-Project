@@ -1,3 +1,39 @@
+:root {
+    /* colores que vamos a colocar en nuestro proyecto
+    mobile 375px*/
+    --background-one-main: hsl(222, 26%, 31%);
+    --background-one-togglekeypad: hsl(223, 31%, 20%);
+    --background-one-screen: hsl(224, 36%, 15%);
+    --key-one-delreset: hsl(225, 21%, 49%);
+    --key-one-delresetshadow: hsl(224, 28%, 35%);
+    --key-one-red: hsl(6, 63%, 50%);
+    --key-one-redshadow: hsl(6, 70%, 34%);
+    --key-one-white: hsl(30, 25%, 89%);
+    --key-one-whiteshadow: hsl(28, 16%, 65%);
+    --numbers-one-black: hsl(221, 14%, 31%);
+    --numbers-one-white: white;
+    --background-two-main: hsl(0, 0%, 90%);
+    --background-two-togglekeypad: hsl(0, 5%, 81%);
+    --background-two-screen: hsl(0, 0%, 93%);
+    --key-two-delreset: hsl(185, 42%, 37%);
+    --key-two-delresetshadow: hsl(185, 58%, 25%);
+    --key-two-orange: hsl(25, 98%, 40%);
+    --key-two-orangeshadow: hsl(25, 99%, 27%);
+    --key-two-numbers: hsl(45, 7%, 89%);
+    --key-two-numbershadow: hsl(35, 11%, 61%);
+    --numbers-two-dark: hsl(60, 10%, 19%);
+    --background-three-main: hsl(268, 75%, 9%);
+    --background-three-togglekeypadscreen: hsl(268, 71%, 12%);
+    --key-three-delreset: hsl(281, 89%, 26%);
+    --key-three-delredetshadow: hsl(285, 91%, 52%);
+    --key-three-toggle: hsl(176, 100%, 44%);
+    --key-three-toggleshadow: hsl(177, 92%, 70%);
+    --key-three-numbers: hsl(268, 47%, 21%);
+    --key-three-numbersshadow: hsl(290, 70%, 36%);
+    --numbers-three-yellow: hsl(52, 100%, 62%);
+    --numbers-three-dark: hsl(198, 20%, 13%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +42,21 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+}
+body {
+    background: var(--background-one-main);
 }
 
-/*A partir de acá se puede empezar a agregar el código CSS para agregar estilo al HTML*/
+.section-header h1 {}
 
+/*A partir de acá se puede empezar a agregar el código CSS para agregar estilo al HTML*/
 .attribution {
     font-size: 11px;
     text-align: center;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
 }

@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="A little Calculator for you">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" type="text/stylesheet" href="./mobile.css">
     <title>Calculator App</title>
-</head>
-<body>
+ </head>
+ <body>
     <main>
-        <section>
+        <!--Explicación de las clases en teoria esta parte deberia ser un header
+        y ademas porque va a ir a la parte de arriba, asi que lo vamos a llamar por su contenido
+        es decir section más el header ya que es lo que propiamente va a ir arriba --> 
+        <section class="section-header">
             <h1>Calc</h1>
             <h3>Theme</h3>
-            <!--este div tiene que estar relacionado con la caja que vamos a mover a la izquierda-->
-            <div>
+            <!--este div tiene que estar relacionado con la caja que vamos a mover a la izquierda.
+            Lala: lo demas no le pongo clase porque vamos a usar la especificidad de CSS y HTML para
+            nombrarlo. Despues las clases de abajo el conetenido section, nuestro lugar header y 
+            posteriormente el uso dado que va a recirbir.-->
+            <div class="section-header-theme">
                 <nav>
                     <ul>
                         <li>1</li>
@@ -22,42 +28,50 @@
                         <li>3</li>
                     </ul>
                 </nav>
-                <div><!--En este div hay que colocar un boton circular que se mueva en 3 opciones y un ID para identificarlo tanto en CSS cómo en JS-->
+            <!--Lo mismo para los numeros, usaremos la especificidad de CSS. Despues investigue y no pasa nada
+            si le colocas el mismo nombre al id y a la class. Cuestion esta dentro de una seccion, que va adentro de
+            el header que a su vez cumple su fincion como boton-->
+                <div class="seccion-header-bottom" id="seccion-header-bottom"><!--En este div hay que colocar un boton circular que se mueva en 3 opciones y un ID para identificarlo tanto en CSS cómo en JS-->
                 </div>
             </div>
         </section>
-        <section>
-            <!--Este input tiene que llamarse de algún modo para que muestre los valores que se colocan-->
+        <section class="section-input-outcome">
+            <!--Este input tiene que llamarse de algún modo para que muestre los valores que se colocan
+             Lala: outcome significa resultado, no quise usar result porque outcome es como lo que te tira
+             el programa. Entonces queda más profesional, cuestion de nuevo. Esta dentro de una seccion, que es
+            un input pero va a ser un resultado.-->
             <input type="text">
         </section>
-        <section>
+        <section class="section-main-calc">
             <!--Cada div padre es una fila de botones, cada div individual con el span es el boton individual, todos los divs que cumplan la misma función se los va a llamar igual, 
-                tanto las filas como los botones individuales, a excepción de los que llevan un color aparte o sean de diferente tamaño-->
-            <div><!--fila 1-->
+                tanto las filas como los botones individuales, a excepción de los que llevan un color aparte o sean de diferente tamaño
+              Lala: aca no se puede usar la especificidad de CSS porque hay muchos divs, entonces
+            cada uno tiene su clase para que sea más facil encontrarlos. row es linea, estan adentro de un div y el numero de linea.-->
+            <div class="div-rowone"><!--fila 1-->
                 <div><span>7</span></div>
                 <div><span>8</span></div>
                 <div><span>9</span></div>
                 <div><span>DEL</span></div> <!--diferente color-->
             </div>
-            <div><!--fila 2-->
+            <div class="div-rowtwo"><!--fila 2-->
                 <div><span>4</span></div>
                 <div><span>5</span></div>
                 <div><span>6</span></div>
                 <div><span>+</span></div>
             </div>
-            <div><!--fila 3-->
+            <div class="div-rowthree"><!--fila 3-->
                 <div><span>1</span></div>
                 <div><span>2</span></div>
                 <div><span>3</span></div>
                 <div><span>-</span></div>
             </div>
-            <div><!--fila 4-->
+            <div class="div-rowfour"><!--fila 4-->
                 <div><span>.</span></div>
                 <div><span>0</span></div>
                 <div><span>/</span></div>
                 <div><span>x</span></div>
             </div>
-            <div> <!--fila 5--><!--esta fila y estos dos botones individuales tienen que llamarse diferente, por tener color y tamaño diferentes-->
+            <div class="div-rowfive"> <!--fila 5--><!--esta fila y estos dos botones individuales tienen que llamarse diferente, por tener color y tamaño diferentes-->
                 <div><span>RESET</span></div>
                 <div><span>=</span></div>
             </div>
@@ -67,5 +81,5 @@
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Lara Cepeda</a> & <a href="#">Facundo Cornejo</a>.
     </div>
-</body>
+ </body>
 </html>
