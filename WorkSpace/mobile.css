@@ -78,30 +78,32 @@ body {
     left: 9rem;
 }
 
-.section-header-theme  nav li{
-    margin: 0.5rem;
+.section-header-theme nav li {
+    margin: 0.7rem;
     display: inline;
     color: var(--numbers-one-white);
     font-size: 1.2rem;
     list-style: none;
 }
 
-.seccion-header-bottom{
-    height: 2rem;
-    width: 5.8rem;
+.seccion-header-bottom {
+    height: 2.3rem;
+    width: 6.5rem;
+    border-radius: 4rem;
+    border: none;
     margin-top: 0.5rem;
-    border-radius: 50px;
-    position: relative;
-    cursor: pointer;
+    outline: none;
+    background: var(--background-one-togglekeypad);
 }
 
 .seccion-header-bottom input {
-    height: 2rem;
-    width: 5.8rem;
-    border-radius: 50px;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0.4rem 0 0.6rem 0.4rem;
+    background: var(--key-one-red);
+    border-radius: 1000rem;
+    cursor: pointer;
     border: none;
-    outline: none;
-    background: var(--background-one-togglekeypad);
 }
 
 .section-input-outcome {
@@ -111,30 +113,30 @@ body {
 }
 
 .section-input-outcome input {
-    height: 10rem;
-    width: 30rem;
-    padding: 2rem;
+    height: 9rem;
+    width: 32.8rem;
+    padding: 1rem;
     position: relative;
     font-family: 'Spartan', sans-serif;
     font-size: 3rem;
     text-align: right;
     color: white;
     background: var(--background-one-screen);
-    border-radius: 5px;
+    border-radius: 0.9rem;
     border: none;
     outline: none;
-    
+
 }
 
 .section-main-calc {
     height: 44rem;
     width: 30rem;
-    margin: 3.5rem;
+    margin: 2.5rem;
     padding: 2rem;
     position: relative;
     background: var(--background-one-screen);
     border-radius: 5px;
-    
+
 }
 
 .div-row-buttons {
@@ -169,14 +171,12 @@ body {
     box-shadow: 0 0.5rem 0 0 var(--key-one-delresetshadow);
 }
 
-#div-button-del p {
-    
-}
+#div-button-del p {}
 
 .div-button-reset {
     height: 5rem;
     width: 10.8rem;
-    margin:1rem;
+    margin: 1rem;
     padding-top: 1.5rem;
     display: inline-block;
     border-radius: 5px;
@@ -185,17 +185,17 @@ body {
     cursor: pointer;
 }
 
-.div-button-reset p{
+.div-button-reset p {
     font-size: 1.5rem;
     color: white;
     text-align: center;
-    
+
 }
 
 .div-button-equal {
     height: 5rem;
     width: 10.8rem;
-    margin:1rem;
+    margin: 1rem;
     padding-top: 1.5rem;
     display: inline-block;
     border-radius: 5px;
@@ -204,7 +204,7 @@ body {
     cursor: pointer;
 }
 
-.div-button-equal p{
+.div-button-equal p {
     font-size: 1.5rem;
     color: white;
     text-align: center;

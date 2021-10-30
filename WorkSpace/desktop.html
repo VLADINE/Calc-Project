@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="A little Calculator for you">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <title>Calculator App</title>
+</head>
+<body>
+    <main>
+        <!--Explicación de las clases en teoria esta parte deberia ser un header
+        y ademas porque va a ir a la parte de arriba, asi que lo vamos a llamar por su contenido
+        es decir section más el header ya que es lo que propiamente va a ir arriba -->
+        <section class="section-header">
+            <h1>calc</h1>
+            <h3>THEME</h3>
+            <!--este div tiene que estar relacionado con la caja que vamos a mover a la izquierda.
+            Lala: lo demas no le pongo clase porque vamos a usar la especificidad de CSS y HTML para
+            nombrarlo. Despues las clases de abajo el coneteniudo section, nuestro lugar header y 
+            posteriormente el uso dado que va a recirbir.-->
+            <div class="section-header-theme">
+                <nav>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </nav>
+                <!--Lo mismo para los numeros, usaremos la especificidad de CSS. Despues investigue y no pasa nada
+            si le colocas el mismo nombre al id y a la class. Cuestion esta dentro de una seccion, que va adentro de
+            el header que a su vez cumple su fincion como boton-->
+                <div class="seccion-header-bottom" id="seccion-header-bottom">
+                    <!--En este div hay que colocar un boton circular que se mueva en 3 opciones y un ID para identificarlo tanto en CSS cómo en JS-->
+                    <input type="text">
+                </div>
+            </div>
+        </section>
+        <section class="section-input-outcome">
+            <!--Este input tiene que llamarse de algún modo para que muestre los valores que se colocan
+             Lala: outcome significa resultado, no quise usar result porque outcome es como lo que te tira
+             el programa. Entonces queda más profesional, cuestion de nuevo. Esta dentro de una seccion, que es
+            un input pero va a ser un resultado.-->
+            <input type="text">
+        </section>
+        <section class="section-main-calc">
+            <!--Cada div padre es una fila de botones, cada div individual con el span es el boton individual, todos los divs que cumplan la misma función se los va a llamar igual, 
+                tanto las filas como los botones individuales, a excepción de los que llevan un color aparte o sean de diferente tamaño
+              Lala: aca no se puede usar la especificidad de CSS porque hay muchos divs, entonces
+            cada uno tiene su clase para que sea más facil encontrarlos. row es linea, estan adentro de un div y el numero de linea.-->
+            <div class="div-row-buttons">
+                <!--fila 1-->
+                <div class="div-button-calc">
+                    <p>7</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>8</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>9</p>
+                </div>
+                <div class="div-button-calc" id="div-button-del">
+                    <p>DEL</p>
+                </div>
+                <!--diferente color-->
+            </div>
+            <div class="div-row-buttons">
+                <!--fila 2-->
+                <div class="div-button-calc">
+                    <p>4</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>5</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>6</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>+</p>
+                </div>
+            </div>
+            <div class="div-row-buttons">
+                <!--fila 3-->
+                <div class="div-button-calc">
+                    <p>1</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>2</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>3</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>-</p>
+                </div>
+            </div>
+            <div class="div-row-buttons">
+                <!--fila 4-->
+                <div class="div-button-calc">
+                    <p>.</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>0</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>/</p>
+                </div>
+                <div class="div-button-calc">
+                    <p>x</p>
+                </div>
+            </div>
+            <div class="div-row-buttons">
+                <!--fila 5-->
+                <!--esta fila y estos dos botones individuales tienen que llamarse diferente, por tener color y tamaño diferentes-->
+                <div class="div-button-reset">
+                    <p>RESET</p>
+                </div>
+                <div class="div-button-equal">
+                    <p>=</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Lara Cepeda</a> & <a href="#">Facundo Cornejo</a>.
+    </div>
+</body>
+</html>
